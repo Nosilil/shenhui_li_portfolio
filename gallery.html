@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset = "utfs-8" />
+    <title> Gallery </title>
+    <!-- specifying the font to use, need to do this for every page -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+<head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="gallery.html">Gallery</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="about.html">About</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="https://github.com/Nosilil">Github</a>
+                </div>
+                
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>SHENHUI Li</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+                <!--PICTURES INSERTION STARTS HERE-->
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/chongqing.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Chongqing, China
+                            <p>View of the famous Hongya Cave from the other side of the river</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/shanghai.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Shanghai, China
+                            <p>Looking down from the tallest building in China - the Shanghai Tower - you'd find the city with gold in her vein</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/taipei.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Taipei, ROC
+                            <p>The best way to admire skyscrapers doesn't have to be in them</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/cambridge2.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Cambridge, England
+                            <p>Flowers growing through the crack of the fence from the neighbour's side</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/chengdu.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Chengdu, China
+                            <p>A photogenic panda binging bamboos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/hunan.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Hunan, China
+                            <p>A fisherman preparing his fishing net early in morning</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/toronto.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Toronto, Canada
+                            <p>Illuminant jellyfish glowing in the dark</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/york.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            York, England
+                            <p>The dome of York Minister, perfectly symmetrical and oddly satisfying</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/cambridge.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Cambridge, England
+                            <p>Bike park next to the Cambridge train station</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/london.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            London, England
+                            <p>St Paul's Cathedral in a moody afternoon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/berlin.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Berlin, Germany
+                            <p>The Memorial to the Murdered Jews in Europe</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style = "background-image:url(images/hongkong.jpg)">
+                    </div>
+                    <div class="img-text-wrapper">
+                        <div class="subtitle">
+                            Hong Kong, China
+                            <p>A new journey starts as the sun setting in the background</p>
+                        </div>
+                    </div>
+                </div>
+                <!--PICTURE INSERTION ENDS HERE-->
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- here comes the javascript -->
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    
+    //darkening animation
+    portfolioItems.forEach(portfolioItem => { //portfolioItem is the iterator
+        portfolioItem.addEventListener('mouseover', ()=>{ //anon function
+            portfolioItem.childNodes[1].classList.add('img-darken');
+
+        })
+    })
+    //restoring animation
+    portfolioItems.forEach(portfolioItem => { 
+        portfolioItem.addEventListener('mouseout', ()=>{ 
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+
+        })
+    })
+</script>
+<!-- end of JS -->
+</html>

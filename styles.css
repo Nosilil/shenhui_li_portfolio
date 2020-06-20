@@ -1,0 +1,125 @@
+/*MASTER STYLES*/
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0px;
+
+}
+
+.container { /*set the display of the container class to grid and each column of size 1fr (100%)*/
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/*NAV BAR STYLES*/
+.nav-wrapper {
+    display: flex; /*nav-wrapper class is gonna be next to other classes shoulder to shoulder*/
+    justify-content: space-between;
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+}
+
+.nav-wrapper > .left-side > div { /*apply style to all the divs under left-side*/
+    margin-right: 20px; /*putting a 20px horizontal margin to the sub divs*/
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;   
+}
+
+.nav-link-wrapper a { /*select the "a link" in nav-link-wrapper*/
+    color: #8a8a8a;
+    text-decoration: none; /*remove the html underline in the hyperlinks*/
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover { /*set the animation when the cursor hovers over the links*/
+    border-bottom: 1px solid black;
+}
+
+.nav-link-wrapper a:hover{
+    color: black;
+}
+
+.active-nav-link{
+    border-bottom: 1px solid black;
+}
+
+.active-nav-link a{
+    /* overwrite the default behaviour using !important */
+    color: black !important;
+}
+/*PORTFOLIO STYLES*/
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*3 columns, each with size 1fr*/
+}
+
+.portfolio-item-wrapper {
+    position: relative; /*precondition to use position absolute in the following code*/
+}
+
+.portfolio-img-background {
+    height: 350px; /*fixed height*/
+    width: 100%; /*width adjusts automatically*/
+    background-size: cover; /*cropping the size of the image to fit in the grid*/
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img { /*selecting the img in the logo-wrapper class*/
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent
+}
+/* only when it's at the hover stage will this perform*/
+.img-text-wrapper:hover .subtitle {
+    font-weight: 600;
+    color: whitesmoke;
+}
+
+/* creating a new class for styling, need to call this in javascript for animation */
+.img-darken { 
+    transition: 1s;
+    filter: brightness(10%);
+}
+
+/* About page style */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img{
+    width:100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
