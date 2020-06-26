@@ -145,7 +145,7 @@ body {
     right: 50px;/*
     bottom: 50px; */
     
-   transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
  }
  
  .fab:hover  > div {
@@ -153,10 +153,11 @@ body {
     transform: scale(1.05);
  }
 
- .who_am_i_icon [href*='facebook.com']{
+ .who_am_i_icon{
     bottom: 255px;
     background-image: url('logo/who_am_i_2.png');
-    background: url()
+    text-decoration: none;
+
  }
  .past_projects_icon{
     bottom: 180px;
