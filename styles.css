@@ -123,3 +123,50 @@ body {
     padding: 30px;
 }
 
+
+/* index styling */
+.fab > div { /*apply to all divs under fab*/
+    width: 60px;
+    height: 60px;
+    /* background-color: rgb(199, 172, 172); */
+    /* background-image: url('logo/work.png'); */
+    background-repeat: no-repeat;
+    background-size: 65%;
+    background-position: center;
+    border-radius: 50%;
+    box-shadow: 0 6px 10px 0 #666;
+    
+    font-size: 50px;
+    line-height: 70px;
+    color: black;
+    text-align: center;
+    
+    position: fixed;
+    right: 50px;/*
+    bottom: 50px; */
+    
+   transition: all 0.1s ease-in-out;
+ }
+ 
+ .fab:hover  > div {
+    box-shadow: 0 6px 14px 0 #666;
+    transform: scale(1.05);
+ }
+
+ .who_am_i_icon [href*='facebook.com']{
+    bottom: 255px;
+    background-image: url('logo/who_am_i_2.png');
+    background: url()
+ }
+ .past_projects_icon{
+    bottom: 180px;
+    background-image: url('logo/past_projects.png');
+ }
+ .work_experience_icon{
+     bottom: 105px;
+     background-image: url('logo/work_2.png');
+ }
+ .contact_icon{
+     bottom: 30px;
+     background-image: url('logo/contact_me.png');
+ }
