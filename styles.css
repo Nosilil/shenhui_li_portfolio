@@ -57,10 +57,28 @@ body {
 }
 /*PORTFOLIO STYLES*/
 
-.portfolio-items-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /*3 columns, each with size 1fr*/
+/* responsiveness design */
+@media only screen and (min-width: 500px){
+    .portfolio-items-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
+
+@media only screen and (min-width: 600px){
+    .portfolio-items-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 1000px){
+    .portfolio-items-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 
 .portfolio-item-wrapper {
     position: relative; /*precondition to use position absolute in the following code*/
@@ -146,28 +164,46 @@ body {
     bottom: 50px; */
     
     transition: all 0.1s ease-in-out;
- }
+}
  
- .fab:hover  > div {
+/* .fab:hover  > div {
     box-shadow: 0 6px 14px 0 #666;
     transform: scale(1.05);
- }
+} */
 
- .who_am_i_icon{
+.who_am_i_icon{
     bottom: 255px;
     background-image: url('logo/who_am_i_2.png');
     text-decoration: none;
+}
+.who_am_i_icon:hover{
+    box-shadow: 0 6px 14px 0 #666;
+    transform: scale(1.05);
+}
 
- }
- .past_projects_icon{
+.past_projects_icon{
     bottom: 180px;
     background-image: url('logo/past_projects.png');
- }
- .work_experience_icon{
-     bottom: 105px;
-     background-image: url('logo/work_2.png');
- }
- .contact_icon{
-     bottom: 30px;
-     background-image: url('logo/contact_me.png');
- }
+}
+.past_projects_icon:hover{
+    box-shadow: 0 6px 14px 0 #666;
+    transform: scale(1.05);
+}
+
+.work_experience_icon{
+    bottom: 105px;
+    background-image: url('logo/work_2.png');
+}
+.work_experience_icon:hover{
+    box-shadow: 0 6px 14px 0 #666;
+    transform: scale(1.05);
+}
+
+.contact_icon{
+    bottom: 30px;
+    background-image: url('logo/contact_me.png');
+}
+.contact_icon:hover{
+    box-shadow: 0 6px 14px 0 #666;
+    transform: scale(1.05);
+}
