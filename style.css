@@ -13,6 +13,7 @@
 :root{
     /* font choice */
     --ff-primary: 'Roboto Mono', monospace;
+    --ff-secondary: 'Bebas Neue', cursive;
     
     /* font weight */
     --fw-reg: 300;
@@ -21,7 +22,8 @@
     /* colour */
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    /* --clr-accent: #16e0bd; */
+    --clr-accent: #90CCF4;
 
     /* font size */
     --fs-h1: 3rem;
@@ -278,7 +280,7 @@ strong{ font-weight: var(--fw-bold)}
 /* my service section */
 .my-services{
     background-color: var(--clr-dark);
-    background-image: url(../shenhui_li_portfolio/images/taipei.jpg);
+    background-image: url(../shenhui_li_portfolio/images/who_am_i.jpg);
     background-size: cover;
     background-blend-mode: multiply;/* darken the image */
     color: var(--clr-light);
@@ -326,9 +328,10 @@ strong{ font-weight: var(--fw-bold)}
     max-width: 1000px;
     margin: 0 auto;
 }
-.about-me__img{
+
+/* .about-me__img{
     box-shadow: var(--bs);
-}
+} */
 
 @media (min-width: 600px){
     .about-me{
@@ -440,4 +443,17 @@ strong{ font-weight: var(--fw-bold)}
 
 .social-list__link {
     padding: 0.5em;
+}
+
+/* individual portfolio item styles in inde */
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.portfolio-item-individual p{
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
