@@ -4,6 +4,31 @@ body {
     margin: 0px;
 
 }
+:root{
+    /* font choice */
+    --ff-primary: 'Roboto Mono', monospace;
+    --ff-secondary: 'Bebas Neue', cursive;
+    
+    /* font weight */
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    /* colour */
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    /* --clr-accent: #16e0bd; */
+    --clr-accent: #90CCF4;
+
+    /* font size */
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3:1.25rem;
+    --fs-body:1rem;
+
+    /* box shadow */
+    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,0.25);
+          /* 0.125em 0.125em 0.25em rgba(0,0,0,0.15); */
+}
 
 .container { /*set the display of the container class to grid and each column of size 1fr (100%)*/
     display: grid;
@@ -23,12 +48,12 @@ body {
 
 .nav-wrapper > .left-side > div { /*apply style to all the divs under left-side*/
     margin-right: 20px; /*putting a 20px horizontal margin to the sub divs*/
-    font-size: 0.9em;
+    font-size: var(--fs-h3);
     text-transform: uppercase;
 }
 
 .nav-link-wrapper {
-    height: 22px;
+    height: 29px;
     border-bottom: 1px solid transparent;
     transition: border-bottom 0.5s;   
 }
@@ -55,7 +80,7 @@ body {
     /* overwrite the default behaviour using !important */
     color: black !important;
 }
-/*PORTFOLIO STYLES*/
+/*GALLERY STYLES*/
 
 /* responsiveness design */
 @media only screen and (min-width: 600px){
