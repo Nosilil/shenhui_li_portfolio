@@ -27,10 +27,13 @@
                 <div class="nav-wrapper">
                     <div class="left-side">
                         <div class="nav-link-wrapper active-nav-link">
-                            <a href="index.html">Home</a>
+                            <a href="shenhui.html">Home</a>
                         </div>
                         <div class="nav-link-wrapper">
                             <a href="gallery.html">Gallery</a>
+                        </div>
+                        <div class="nav-link-wrapper">
+                            <a href="Shenhui Li Resume Ver3.1.pdf" download>CV</a>
                         </div>
                     </div>
                     <div class="right-side">
@@ -53,6 +56,7 @@
                         <li class="nav__item"><a href="shenhui.html#services" class="nav__link">What I do</a></li>
                         <li class="nav__item"><a href="shenhui.html#about" class="nav__link">about me</a></li>
                         <li class="nav__item"><a href="shenhui.html#work" class="nav__link">my work</a></li>
+                        <li class="nav__item"><a href="shenhui.html#cv" class="nav__link">CV</a></li>
                         <!-- <li class="nav__item"><a href="#" class="nav__link">Gallery</a></li> -->
                     </ul>
                 </nav>
@@ -61,25 +65,36 @@
 
        <!-- intro -->
        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">project title</h1>
-            <p class="section__subtitle section__subtitle--intro">project description</p>
-            <img src="images/shanghai.jpg" alt="" class="intro__img">
+            <h1 class="section__title section__title--intro">BladeBug Localisation System</h1>
+            <p class="section__subtitle section__subtitle--intro">Robot localisation system on wind turbine</p>
+            <img src="images/blade_bug.jpg" alt="" class="intro__img">
         </section>
 
         <div class="portfolio-item-individual">
-            <p>orem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonoru</p>
-            <img src="images/hongkong.jpg" alt="">
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to us</p>
-            <p>peat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, c</p>
+            <h3>Skills used</h3>
+            <p>Analogue electronics, digital signal processing, C/C++.</p>
+            <h3>Concept</h3>
+            <p>This purpose of this project is to locate the wind turbine inspecting robot - BladeBug - on the turbine blade.</p>
+            <p>Since the turbine blade flexes as wind blows, the straight line distance from the robot to the centre of the turbine, which is known as the hub, cannot be used as a measurement parameter.</p>
+            <p>Various methods were proposed to solve this problem, the most promising one was the solenoid ring localisation method.</p>
+            <img src="images/solenoid_circumference.png" alt="Localising the robot" class="portfolio-image">
+            <p>As shown above is the cross-section of the blade with a ring of solenoid actuator attached to the wall. The robot, climbing on the outside of the blade, receives the sound wave signal travelled via the blade and calculates the distance based on the delay.</p>
+            
         </div>
 
         <!-- footer -->
         <footer class="footer">
-            <a href="mailto:lison9809@gmail.com" class="footer__link">lison9809@gmail.com</a>
+            <p>Shenhui Li 2020</p>
+            <div class="cv-link">
+                <a href="Shenhui Li Resume Ver3.1.pdf" download>
+                    My CV
+                </a>
+            </div>
             <ul class="social-list">
                 <li class="social-list__item"><a class="social-list__link" href="https://github.com/Nosilil"><i class="fab fa-github"></i></a></li>
                 <li class="social-list__item"><a class="social-list__link" href="https://www.instagram.com/lison.liii/"><i class="fab fa-instagram"></i></a></li>
                 <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/shenhui-lison-li/"><i class="fab fa-linkedin"></i></a></li>
+                <li class="social-list__item"><a class="social-list__link" href="mailto:lison9809@gmail.com"><i class="far fa-envelope"></i></a></li>
             </ul>
         </footer>
 
