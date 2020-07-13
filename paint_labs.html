@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>BladeBug Localisation System</title>
+        <title>Pa!nt Labs</title>
         <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
@@ -63,23 +63,20 @@
 
        <!-- intro -->
        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">BladeBug Localisation System</h1>
-            <p class="section__subtitle section__subtitle--intro">Robot localisation system on wind turbine</p>
-            <img src="images/blade_bug.jpg" alt="" class="intro__img">
+            <h1 class="section__title section__title--intro">Pa!nt Labs</h1>
+            <p class="section__subtitle section__subtitle--intro">A solution to accurate colour measurement</p>
+            <img src="images/pa!nt_labs.jpg" alt="" class="intro__img">
         </section>
 
         <div class="portfolio-item-individual">
             <h3>Skills used</h3>
-            <p>Analogue electronics, digital signal processing, C/C++ on STM32CUBE, MATLAB.</p>
+            <p>Analogue electronics, Python on Raspberry Pi, Java on Android Studio.</p>
             <h3>Concept</h3>
-            <p>The purpose of this project is to locate the wind turbine inspecting robot - BladeBug - on the turbine blade.</p>
-            <p>Since the turbine blade flexes as wind blows, the straight line distance from the robot to the centre of the turbine, which is known as the hub, cannot be used as a measurement parameter.</p>
-            <p>Various methods were proposed to solve this problem, the most promising one was the solenoid ring localisation method.</p>
-            <img src="images/solenoid_circumference.png" alt="Localising the robot" class="portfolio-image">
-            <p>As shown above is the cross-section of the blade with a ring of solenoid actuator attached to the wall. The robot, climbing on the outside of the blade, receives the sound wave signal travelled via the blade and calculates the distance based on the delay.</p>
-            
+            <p>This IOT project utilises the AS7262 visible light colour sensor to accurately measure the colour of an object. The result of the measurement, along with detailed information on the colour, is displayed on the user's phone by an app.</p>
+            <img src="images/paint_lab_device.jpg" alt="A demonstration of the device" class="portfolio-image">
+            <p>This device bases on MQTT, which is a messaging protocol for IOT devices. The user sends a request of measurement from the app, the message is relayed by the MQTT server and arrives at the sensor. The reading from the sensor is sent to the data processing server via MQTT, the detailed information about the colour then finally arrives at the user's end.</p>
+            <img src="images/paint_lab_screenshot.jpg" alt="A demonstration of the app" class="portfolio-image">            
         </div>
-
         <!-- footer -->
         <footer class="footer">
             <p>Shenhui Li 2020</p>
