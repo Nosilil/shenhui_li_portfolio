@@ -124,7 +124,7 @@ strong{ font-weight: var(--fw-bold)}
 }
 
 .section__subtitle--intro,
-.section__subtitle--about{
+.section__subtitle--skills{
     background: var(--clr-accent);
     font-family: var(--ff-primary); /* might wanna change it to sth else */
     margin-bottom: 1em;
@@ -236,6 +236,21 @@ strong{ font-weight: var(--fw-bold)}
 .hamburger::before{ top: 6px;}
 .hamburger::after{ bottom: 6px;}
 
+.previous {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h1);
+    width: 2em;
+    height: 2em;;
+    position: absolute;
+    top: 1.6em;
+    left: 1em;
+    background-color: none;
+    color: var(--clr-accent);
+  }
+
 /* intro */
 .intro {
     position: relative;
@@ -324,17 +339,64 @@ strong{ font-weight: var(--fw-bold)}
 }
 
 /* about me */
-.about-me{
+.skills{
     max-width: 1000px;
     margin: 0 auto;
 }
 
-/* .about-me__img{
-    box-shadow: var(--bs);
-} */
+.skills__img{
+    /* box-shadow: var(--bs); */
+    /* apply dynamic shadow */
+    -webkit-filter: drop-shadow(5px 5px 5px var(--bs));
+    filter: drop-shadow(5px 5px 5px var(0--bs));
+}
+
+.skill{
+    padding-left: none;
+}
+
+.skill__icon{
+    font-size: var(--fs-h2);
+}
+
+.skill__icon-img{
+    display: inline-block;
+    height: 2.5em;
+    width: auto;
+}
+
+.skill__body{
+    margin-bottom: 2em;
+}
+.skill__sub{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.skill__prgramming{
+    margin-bottom: 0em;
+}
+
+.skill__electronic{
+    margin-bottom: 1em;
+}
+
+@media (min-width: 800px){
+    .skill__body{
+        display: flex;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+    .skill__sub + .skill__sub { /* add spacing between each skill */
+        margin-left: 4em;
+    }
+}
 
 @media (min-width: 600px){
-    .about-me{
+    .skills{
         display: grid;
         grid-template-columns: 1fr 200px;
         grid-template-areas: 
@@ -343,25 +405,33 @@ strong{ font-weight: var(--fw-bold)}
             "text img";
         grid-column-gap: 2em;
     }
-    .section__title--about{
+
+    .section__title--skills{
         grid-area: title;
     }
-    .section__subtitle--about{
+
+    .section__subtitle--skills{
         grid-column: 1/ -1;
         grid-row: 2;
         position: relative;
         left: -1em;
         width: calc(100% + 2em);
+        height: 2em;
         padding-left: 1em;
         padding-right: calc(200px + 4em);
     }
-    .about-me__img{
+    .skills__img{
         grid-area: img;
         position: relative;
         z-index: 2;
     }
 }
 
+@media (max-width: 600px){
+    .skills__img{
+        display: none;
+    }
+}
 /* my work */
 .my-work{
     background-color: var(--clr-dark);
@@ -450,11 +520,19 @@ strong{ font-weight: var(--fw-bold)}
     padding: 0.5em;
 }
 
-.cv-link:hover {
+/* .cv-link:hover {
     text-decoration: underline;
     opacity: 60%;
+} */
+
+.acknowledgement {
+    padding-top: 2em;
+    font-size: 0.7rem;
 }
 
+.ack__link:hover {
+    opacity: 0.6;
+}
 /* individual portfolio item styles in inde */
 .portfolio-item-individual {
     padding: 0 2em 2em;

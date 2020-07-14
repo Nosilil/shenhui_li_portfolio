@@ -73,12 +73,12 @@ body {
 }
 
 .active-nav-link{
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--clr-accent);
 }
 
 .active-nav-link a{
     /* overwrite the default behaviour using !important */
-    color: black !important;
+    color: var(--clr-accent) !important;
 }
 /*GALLERY STYLES*/
 

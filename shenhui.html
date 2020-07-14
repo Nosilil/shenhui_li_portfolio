@@ -11,6 +11,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
         <link rel="stylesheet" href="styles.css">
                 
         <script src="https://kit.fontawesome.com/b11727ae63.js" crossorigin="anonymous"></script>
@@ -80,22 +81,45 @@
                 </div>
                 <div class="service">
                     <h3>Software Engineering</h3>
-                    <p>I'm interested in relative low-level programming languages such as ARM assembly, C/C++ and Java. However, I'm capable of programming in high-level languages such as Python and F#, too.</p>
+                    <p>I'm interested in relatively low-level programming languages such as ARM assembly, C/C++ and Java. However, I'm capable of programming in high-level languages such as Python and F#, too.</p>
                 </div>
             </div>
         </section>
         
         <!-- about me -->
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Who am I?</h2>
-            <p class="section__subtitle section__subtitle--about"></p>
-
-            <div class="about-me__body">
-                <p>I am a Chinese student currently in his final year study of Electrical and Electronic Engieering at Imperial College London. </p>
-                <p></p>
+        <section class="skills" id="about">
+            <h2 class="section__title section__title--skills">Skill Set</h2>
+            <p class="section__subtitle section__subtitle--skills">A range of things I can do</p>
+            <h3 class="skill__programming">Programming Languages</h3>
+            <div class="skill__body">
+                <div class="skill__sub">
+                    <p class="skill"><i class="devicon-android-plain colored skill__icon"></i> Android development</p>
+                    <p class="skill"><i class="devicon-c-plain colored skill__icon"></i> C</p>
+                    <p class="skill"><i class="devicon-cplusplus-plain colored skill__icon"></i> C++</p>
+                </div>
+                <div class="skill__sub">           
+                    <p class="skill"><img src="images/f_sharp.png" class="skill__icon-img"> F#</p>
+                    <p class="skill"><i class="devicon-java-plain colored skill__icon"></i>  Java</p>                  
+                    <p class="skill"><i class="devicon-python-plain colored skill__icon"></i> Python</p>
+                </div>
             </div>
 
-            <img src="images/Shield_of_Imperial_College_London.png" alt="asdasd" class="about-me__img">
+            <h3></h3>
+            <!-- for some reasons html doesn't like me adding the headings directly without the above line -->
+            <h3 class="skill__electronic">Electronics Knowledge</h3>
+            <h3>   </h3>
+            <div class="skill__body">
+                <div class="skill__sub">
+                    <p class="skill"><i class="fas fa-wave-square skill__icon"></i> Digital signal processing</p>
+                    <p class="skill"><i class="fas fa-microchip skill__icon"></i>  Embedded systems</p>
+                </div>
+                <div class="skill__sub">           
+                    <p class="skill"><img src="images/fpga.png" class="skill__icon-img"> FPGA development</p>
+                    <p class="skill"><i class="fas fa-network-wired skill__icon"></i></i>  Communication Network</p>       
+                </div>
+            </div>
+
+            <img src="images/technical-support.png" alt="asdasd" class="skills__img">
         </section>
 
         <!-- my work -->
@@ -128,6 +152,7 @@
                 <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/shenhui-lison-li/"><i class="fab fa-linkedin"></i></a></li>
                 <li class="social-list__item"><a class="social-list__link" href="mailto:lison9809@gmail.com"><i class="far fa-envelope"></i></a></li>
             </ul>
+            <p class="acknowledgement">Icons by <a href="https://fontawesome.com/" class="ack__link">Font Awesome</a> and <a href="https://konpa.github.io/devicon/" class="ack__link">Devicon</a>, stock image by <a href="https://www.flaticon.com/" class="ack__link">Flaticon</a> and <a href="https://unsplash.com/" class="ack__link">Unsplash</a>.</p>
         </footer>
 
         <script src="js/index.js"></script>
