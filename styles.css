@@ -109,126 +109,95 @@ body {
     position: relative; /*precondition to use position absolute in the following code*/
 }
 
-.portfolio-img-background {
-    height: 350px; /*fixed height*/
-    width: 100%; /*width adjusts automatically*/
-    background-size: cover; /*cropping the size of the image to fit in the grid*/
-    background-position: center;
-    background-repeat: no-repeat;
+
+.gallery__img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-.img-text-wrapper {
-    position: absolute;
-    top: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    padding-left: 180px;
-    padding-right: 180px;
+.gallery__img:hover {
+    /* opacity: 0.7; */
+    filter: brightness(50%);
 }
 
-.logo-wrapper img { /*selecting the img in the logo-wrapper class*/
-    width: 50%;
-    margin-bottom: 20px;
-}
-
-.img-text-wrapper .subtitle {
-    transition: 1s;
-    font-weight: 600;
-    color: transparent
-}
-/* only when it's at the hover stage will this perform*/
-.img-text-wrapper:hover .subtitle {
-    font-weight: 600;
-    color: whitesmoke;
-}
-
-/* creating a new class for styling, need to call this in javascript for animation */
-.img-darken { 
-    transition: 1s;
-    filter: brightness(10%);
-}
-
-/* About page style */
-.two-column-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.profile-image-wrapper img{
-    width:100%;
-}
-
-.profile-content-wrapper {
-    padding: 30px;
-}
-
-
-/* index styling */
-.fab > div { /*apply to all divs under fab*/
-    width: 60px;
-    height: 60px;
-    /* background-color: rgb(199, 172, 172); */
-    /* background-image: url('logo/work.png'); */
-    background-repeat: no-repeat;
-    background-size: 65%;
-    background-position: center;
-    border-radius: 50%;
-    box-shadow: 0 6px 10px 0 #666;
-    
-    font-size: 50px;
-    line-height: 70px;
-    color: black;
-    text-align: center;
-    
+.modal {
+    display: none;
+    /* Hidden by default */
     position: fixed;
-    right: 50px;/*
-    bottom: 50px; */
-    
-    transition: all 0.1s ease-in-out;
-}
- 
-/* .fab:hover  > div {
-    box-shadow: 0 6px 14px 0 #666;
-    transform: scale(1.05);
-} */
-
-.who_am_i_icon{
-    bottom: 255px;
-    background-image: url('logo/who_am_i_2.png');
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-content,
+  #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {
+      transform: scale(0)
+    }
+    to {
+      transform: scale(1)
+    }
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
     text-decoration: none;
-}
-.who_am_i_icon:hover{
-    box-shadow: 0 6px 14px 0 #666;
-    transform: scale(1.05);
-}
-
-.past_projects_icon{
-    bottom: 180px;
-    background-image: url('logo/past_projects.png');
-}
-.past_projects_icon:hover{
-    box-shadow: 0 6px 14px 0 #666;
-    transform: scale(1.05);
-}
-
-.work_experience_icon{
-    bottom: 105px;
-    background-image: url('logo/work_2.png');
-}
-.work_experience_icon:hover{
-    box-shadow: 0 6px 14px 0 #666;
-    transform: scale(1.05);
-}
-
-.contact_icon{
-    bottom: 30px;
-    background-image: url('logo/contact_me.png');
-}
-.contact_icon:hover{
-    box-shadow: 0 6px 14px 0 #666;
-    transform: scale(1.05);
-}
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .modal-content {
+      width: 100%;
+    }
+  }
