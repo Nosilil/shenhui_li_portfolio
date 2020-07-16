@@ -239,16 +239,17 @@ strong{ font-weight: var(--fw-bold)}
 .previous {
     text-decoration: none;
     display: inline-block;
-    padding: 10px 30px;
+    /* padding: 10px 30px;
     font-weight: var(--fw-bold);
-    font-size: var(--fs-h1);
+    font-size: var(--fs-h1); */
     width: 2em;
     height: 2em;;
     position: absolute;
-    top: 1.6em;
-    left: 1em;
+    top: 6.5em;
+    left: 2.5em;
     background-color: none;
     color: var(--clr-accent);
+
   }
 
 /* intro */
